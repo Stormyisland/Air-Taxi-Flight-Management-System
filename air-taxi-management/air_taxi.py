@@ -32,12 +32,6 @@ TIME_STEP = 2                       # seconds
 WAYPOINT_SPACING = 500              # meters
 
 
-# -------------------------------
-# DATA MODELS
-# -------------------------------
 
-@dataclass
-c
-    conflicts = detect_conflicts(flights, plans)
 
 
