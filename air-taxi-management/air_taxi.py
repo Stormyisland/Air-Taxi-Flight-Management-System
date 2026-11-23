@@ -32,6 +32,22 @@ TIME_STEP = 2                       # seconds
 WAYPOINT_SPACING = 500              # meters
 
 
+# -------------------------------
+# DATA MODELS
+# -------------------------------
+
+@dataclass
+class Flight:
+    aircraft_id: str
+    origin_lat: float
+    origin_lon: float
+    destination_lat: float
+    destination_lon: float
+    departure_time: str
+    cruise_altitude: float
+    speed: float  # meters per second
+
+
 
 
 
