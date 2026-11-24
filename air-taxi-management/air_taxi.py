@@ -73,6 +73,7 @@ def haversine(lat1, lon1, lat2, lon2):
         math.sqrt(a)
     )
 
+def interpolate_position(lat1, lon1, lat2, lon2, fraction):
 
 
 
