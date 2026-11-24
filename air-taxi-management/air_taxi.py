@@ -75,6 +75,18 @@ def haversine(lat1, lon1, lat2, lon2):
 
 def interpolate_position(lat1, lon1, lat2, lon2, fraction):
 
+     phi1, lam1 = math.radians(lat1), math.radians(lon1)
+    phi2, lam2 = math.radians(lat2), math.radians(lon2)
+
+    delta = 2 * math.asin(math.sqrt(
+        math.sin((phi2 - phi1) / 2) ** 2
+        + math.cos(phi1) * math.cos(phi2)
+        * math.sin((lam2 - lam1) / 2) ** 2
+    ))
+
+    if delta < 1e-10:
+        return lat1, lon1
+
 
 
 
