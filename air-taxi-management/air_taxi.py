@@ -90,6 +90,11 @@ def interpolate_position(lat1, lon1, lat2, lon2, fraction):
    a = math.sin((1 - fraction) * delta) / math.sin(delta)
     b = math.sin(fraction * delta) / math.sin(delta)
 
+   x = (
+        a * math.cos(phi1) * math.cos(lam1)
+        + b * math.cos(phi2) * math.cos(lam2)
+    )
+
 
 
 
