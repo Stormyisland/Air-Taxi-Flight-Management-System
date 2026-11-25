@@ -87,6 +87,9 @@ def interpolate_position(lat1, lon1, lat2, lon2, fraction):
     if delta < 1e-10:
         return lat1, lon1
 
+   a = math.sin((1 - fraction) * delta) / math.sin(delta)
+    b = math.sin(fraction * delta) / math.sin(delta)
+
 
 
 
