@@ -95,6 +95,11 @@ def interpolate_position(lat1, lon1, lat2, lon2, fraction):
         + b * math.cos(phi2) * math.cos(lam2)
     )
 
+  y = (
+        a * math.cos(phi1) * math.sin(lam1)
+        + b * math.cos(phi2) * math.sin(lam2)
+    )
+
 
 
 
