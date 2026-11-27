@@ -100,6 +100,10 @@ def interpolate_position(lat1, lon1, lat2, lon2, fraction):
         + b * math.cos(phi2) * math.sin(lam2)
     )
 
+  z = (
+        a * math.sin(phi1)
+        + b * math.sin(phi2)
+    )
 
 
 
