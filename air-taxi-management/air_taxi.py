@@ -106,5 +106,10 @@ def interpolate_position(lat1, lon1, lat2, lon2, fraction):
     )
 
 
+    longitude = math.degrees(math.atan2(y, x))
+
+    return latitude, longitude
+
+
 
 
