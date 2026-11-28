@@ -112,6 +112,9 @@ def interpolate_position(lat1, lon1, lat2, lon2, fraction):
 
 # FLIGHT PLAN GENERATOR
 
+ if flight.speed <= 0:
+        raise ValueError("Aircraft speed must be positive.")
+
 
 def generate_flight_plan(flight: Flight):
 
